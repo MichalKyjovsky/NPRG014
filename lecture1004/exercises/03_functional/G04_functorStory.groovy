@@ -1,6 +1,10 @@
 //TASK make the Story class a functor, so that it accepts String -> String functions
 class Story {
     String words
+
+    Story map(f) {
+        new Story(words: f(this.words))
+    }
     
 }
 

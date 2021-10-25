@@ -9,8 +9,9 @@ def currentDay = Tue
 assert Wed in [Mon, Wed, Fri]
 assert Wed in Mon..Fri
 assert ++currentDay == Wed
-assert currentDay.previous() == Tue
-assert currentDay.next() == Thu
+assert ++currentDay == Thu
+assert currentDay.previous() == Wed
+assert currentDay.next() == Fri
 
 switch (currentDay) {
     case [Sun, Sat]: println 'Vivat weekend'

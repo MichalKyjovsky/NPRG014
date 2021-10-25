@@ -12,5 +12,7 @@ a + b + 9
 '''
 
 println 'Result: ' + shell.evaluate(code)
+println binding.note
 
 //TASK Read and print the 'note' bound by the script
+

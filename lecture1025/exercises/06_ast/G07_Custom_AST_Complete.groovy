@@ -52,6 +52,9 @@ public class RequiresTransformation implements ASTTransformation {
         MethodNode annotatedMethod = astNodes[1]
         def annotationExpression = astNodes[0].members.value
 
+        // TODO: Use this value to implement your homework 
+        // println annotationExpression
+
         if (annotationExpression.class != ConstantExpression) {
             addError("The condition is not a constant expression", astNodes[0], source);
             return

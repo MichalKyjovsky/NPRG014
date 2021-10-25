@@ -7,13 +7,16 @@ interface Calculator {
 
     def divide(a, b)
 
-    def increment(a)
+    default def increment(a) {
+        this.add(a, 1)
+    }
 }
 
 final myCalculator = [
         add: {a, b -> a + b},
         multiply: {a, b -> a * b},
-        increment: {it + 1}
+        // increment: {it + 1}, 
+        subtract: {a, b -> a - b}
 ] as Calculator
 
 assert 10 == myCalculator.add(3, 7)
@@ -22,7 +25,7 @@ assert 6 == myCalculator.increment(5)
 
 //TASK uncomment and see the reported exception
 //TASK add the subtract method so that the following line passes
-//assert 3 == myCalculator.subtract(4, 1)
+assert 3 == myCalculator.subtract(4, 1)
 
 //TASK Re-implement the increment() method so that it reuses the code of add()
 

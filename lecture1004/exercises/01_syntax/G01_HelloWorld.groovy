@@ -1,5 +1,10 @@
 public class HelloWorld {
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        println "Hello World!" // Equivalent to System.out.ptrintln("Hello World!");
     }
 }
+
+/*
+Groovy can acts like a scripting language therefore one-liner performing the same is:
+    println "Hello World!"
+*/

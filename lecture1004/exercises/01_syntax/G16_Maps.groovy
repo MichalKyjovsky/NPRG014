@@ -13,13 +13,15 @@ final capitals = [
 assert capitals.size() == 10
 
 //TASK Add Poland and Ireland to the map
-//assert capitals.size() == 12
+capitals['pl'] = 'Warsaw'
+capitals.ir = 'Dublin'
+assert capitals.size() == 12
 
 println "All countries: ${capitals.keySet()}"
 println "The capital of CZ: ${capitals['cz']}"
 
 //TASK Print in upper case the names of all capitals of countries, the name of which starts with 's'
-//assert ['BRATISLAVA', 'STOCKHOLM'] == capitals...
+assert ['BRATISLAVA', 'STOCKHOLM'] == capitals.findAll{it.key.startsWith('s')}.collect{it.value.toUpperCase()}
 
 
 final cities = capitals.values()

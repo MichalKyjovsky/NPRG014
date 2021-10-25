@@ -12,6 +12,7 @@ class Money {
         }
     }
 
+    // Auxiliary unit. Not essential for the example
     def asBoolean() {
         return amount>0
     }

@@ -52,4 +52,4 @@ new Calculator()
 
 println calculator.convertToNumber("20")
 //TASK: Enable the add(a, b) method that sums a and b
-//println calculator.add(3, 5)
+println calculator.add(3, 5)

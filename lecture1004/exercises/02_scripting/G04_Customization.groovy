@@ -25,6 +25,7 @@ GroovyShell shell = new GroovyShell(binding, config)
 final code = '''
 println 'Calculating ...'
 sinus(a) + cosinus(b) + 9
+System.exit(1)
 
 '''
 

@@ -9,7 +9,7 @@
 
 List<String> filterSitesByUserScript(String userScript, List<String> sites) {
     //Filtering function. Needs to be implemented
-
+    
     return []
 }
 
